@@ -20,10 +20,10 @@
       scene.fog = new THREE.Fog(0xF9F9F9, 200, 300);
       // カメラを作成
       const camera = new THREE.PerspectiveCamera(45, width / height);
-      camera.position.set(0, 0, +1000);
+      camera.position.set(0, 0, 100);
  
       // 箱を作成
-      const geometry = new THREE.BoxGeometry(400, 400, 400);
+      const geometry = new THREE.BoxGeometry(10, 10, 10);
       const material = new THREE.MeshNormalMaterial();
       material.fog=true;
       const box = new THREE.Mesh(geometry, material);
