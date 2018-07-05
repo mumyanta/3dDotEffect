@@ -29,7 +29,7 @@ function init() {
 
 	// 箱を作成
 	const geometry = new THREE.BoxGeometry(10, 10,10);
-	const material = new THREE.MeshNormalMaterial();
+	const material = new THREE.MeshNormalMaterial({color:0x808080});
 	const box = new THREE.Mesh(geometry, material);
 	scene.add(box);
 
