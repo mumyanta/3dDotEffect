@@ -37,7 +37,7 @@ function init() {
 
 	// 毎フレーム時に実行されるループイベントです
 	function tick() {
-		//box.rotation.y += 0.01;
+		box.rotation.y += 0.01;
 		controls.update();
 
 		renderer.render(scene, camera); // レンダリング
