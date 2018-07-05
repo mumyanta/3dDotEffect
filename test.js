@@ -4,8 +4,8 @@ window.addEventListener('load', init);
 function init() {
  
 	// サイズを指定
-	const width = 960;
-	const height = 540;
+	const width = window.innerWidth;
+	const height = window.innerHeight;
 
 	// レンダラーを作成
 	const renderer = new THREE.WebGLRenderer({
