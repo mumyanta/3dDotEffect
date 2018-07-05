@@ -13,7 +13,7 @@ function init() {
 	});
 	renderer.setPixelRatio(window.devicePixelRatio);
 	renderer.setSize(width, height);
-	renderer.setClearColor(0xF9F9F9, 1.0);
+	renderer.setClearColor(0xFFFFFF, 1.0);
 
 	// シーンを作成
 	const scene = new THREE.Scene();
@@ -32,6 +32,11 @@ function init() {
 	const material = new THREE.MeshStandardMaterial({color:0x808080});
 	const box = new THREE.Mesh(geometry, material);
 	scene.add(box);
+
+	// 環境光源を作成
+	// new THREE.AmbientLight(色, 光の強さ)
+	const light = new THREE.AmbientLight(0xFFFFFF, 1.0);
+	scene.add(light);
 
 	tick();
 
